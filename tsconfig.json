@@ -1,11 +1,10 @@
 {
+  "extends": "@infokin/tsconfig",
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "alwaysStrict": true,
-    "removeComments": true,
-    "sourceMap": true
+    "lib": [
+      "ES2020",
+      "DOM"
+    ]
   },
   "include": [
     "src/scripts/*.ts",
