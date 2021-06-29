@@ -13,6 +13,9 @@ module.exports = function (grunt) {
                 ]
             }
         },
+        exec: {
+            typescript: 'tsc'
+        },
         copy: {
             default: {
                 expand: true,
@@ -73,9 +76,10 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks("grunt-contrib-copy");
     grunt.loadNpmTasks("grunt-contrib-uglify");
     grunt.loadNpmTasks("grunt-contrib-watch");
+    grunt.loadNpmTasks("grunt-exec");
     grunt.loadNpmTasks("grunt-tslint");
 
-    grunt.registerTask("build", ["tslint", "clean:development", "uglify"]);
+    grunt.registerTask("build", ["tslint", "clean:development", "exec:typescript", "uglify"]);
     grunt.registerTask("release", ["clean:release", "copy"]);
 
     grunt.registerTask("default", ["build"]);
