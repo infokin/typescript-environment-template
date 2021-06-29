@@ -80,6 +80,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks("grunt-tslint");
 
     grunt.registerTask("build", ["tslint", "clean:development", "exec:typescript", "uglify"]);
+    grunt.registerTask("clean-development", ["clean:development", "clean:other"]);
+    grunt.registerTask("clean-release", ["clean:release"]);
     grunt.registerTask("release", ["clean:release", "copy"]);
 
     grunt.registerTask("default", ["build"]);

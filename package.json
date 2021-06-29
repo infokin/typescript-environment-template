@@ -25,6 +25,8 @@
     "build": "grunt",
     "watch": "grunt watch",
     "clean": "grunt clean",
+    "clean:development": "grunt clean-development",
+    "clean:release": "grunt clean-release",
     "test": "mocha",
     "release": "grunt release"
   },
