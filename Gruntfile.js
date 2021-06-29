@@ -15,9 +15,6 @@ module.exports = function (grunt) {
         },
         ts: {
             default: {
-                options: {
-                    verbose: false
-                },
                 tsconfig: true
             }
         },
