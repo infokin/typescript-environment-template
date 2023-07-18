@@ -89,8 +89,8 @@ This will also remove the _'./dist'_ folder.
 
 ## Bugs & Issues
 
-If there are problems with this project or you find any bugs, then please feel free to create a new issue on the
-[corresponding GitHub page](https://github.com/clovergaze/typescript-environment-template/issues).
+Something is not working as expected? Please report bugs or issues on
+the [corresponding GitHub page](https://github.com/clovergaze/typescript-environment-template/issues).
 
 ## Author
 
