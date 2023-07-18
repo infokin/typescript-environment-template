@@ -2,17 +2,6 @@
 
 module.exports = function (grunt) {
   grunt.initConfig({
-    tslint: {
-      options: {
-        configuration: "tslint.json"
-      },
-      files: {
-        src: [
-          "src/scripts/*.ts",
-          "test/*.ts"
-        ]
-      }
-    },
     exec: {
       typescript: "tsc"
     },
@@ -84,14 +73,12 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks("grunt-contrib-uglify");
   grunt.loadNpmTasks("grunt-contrib-watch");
   grunt.loadNpmTasks("grunt-exec");
-  grunt.loadNpmTasks("grunt-tslint");
 
   grunt.registerTask("default", [
     "build"
   ]);
 
   grunt.registerTask("build", [
-    "tslint",
     "clean:development",
     "exec:typescript",
     "uglify"
