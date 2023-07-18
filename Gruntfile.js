@@ -38,8 +38,8 @@ module.exports = function (grunt) {
       development: {
         src: [
           "src/template.min.js",
-          "src/scripts/*.js*",
-          "test/*.js*"
+          "src/**/*.js*",
+          "test/**/*.js*"
         ]
       },
       release: {
@@ -64,8 +64,8 @@ module.exports = function (grunt) {
         files: [
           "tslint.json",
           "tsconfig.json",
-          "src/scripts/*.ts",
-          "test/*.ts"
+          "src/**/*.ts",
+          "test/**/*.ts"
         ],
         tasks: ["build"]
       }
