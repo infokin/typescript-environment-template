@@ -1,4 +1,6 @@
-class Template extends Abstract {
+import { Abstract } from "./Abstract";
+
+export class Template extends Abstract {
   private element: HTMLHeadingElement;
 
   constructor(id: string) {

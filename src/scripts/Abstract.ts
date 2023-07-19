@@ -1,3 +1,3 @@
-abstract class Abstract {
+export abstract class Abstract {
   public abstract doSomething(): void;
 }
