@@ -9,7 +9,7 @@ export class Template extends Abstract {
     this.element = document.getElementById(id) as HTMLHeadingElement;
   }
 
-  public doSomething() {
+  public doSomething(): void {
     this.element.innerText = "Template environment is working...";
   }
 }
