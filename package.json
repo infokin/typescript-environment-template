@@ -31,6 +31,7 @@
     "release": "grunt release"
   },
   "devDependencies": {
+    "@infokin/eslint-config-typescript": "^1.2.1",
     "@infokin/tsconfig": "^1.1.0",
     "@types/chai": "^4.2.18",
     "@types/mocha": "^8.2.2",

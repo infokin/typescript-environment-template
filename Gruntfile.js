@@ -3,6 +3,7 @@
 module.exports = function (grunt) {
   grunt.initConfig({
     exec: {
+      eslint: "eslint --ext .js,*.ts . src/**/*.ts test/**/*.ts",
       typescript: "tsc"
     },
     copy: {
@@ -56,7 +57,8 @@ module.exports = function (grunt) {
       },
       default: {
         files: [
-          "tslint.json",
+          ".eslintrc.js",
+          ".eslintignore",
           "tsconfig.json",
           "src/**/*.ts",
           "test/**/*.ts"
@@ -79,6 +81,7 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask("build", [
+    "exec:eslint",
     "clean:development",
     "exec:typescript",
     "uglify"
