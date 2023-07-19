@@ -1,3 +1,9 @@
 {
-  "extends": "@infokin/tsconfig"
+  "extends": "@infokin/tsconfig",
+  "compilerOptions": {
+    "lib": [
+      "ES2022",
+      "DOM"
+    ]
+  }
 }
