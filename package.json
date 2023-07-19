@@ -32,10 +32,10 @@
   },
   "devDependencies": {
     "@infokin/eslint-config-typescript": "^1.2.1",
-    "@infokin/tsconfig": "^1.1.0",
+    "@infokin/tsconfig": "^2.0.0",
     "@types/chai": "^4.2.18",
     "@types/mocha": "^8.2.2",
-    "@types/node": "^15.12.2",
+    "@types/node": "^18.16.19",
     "chai": "^4.3.4",
     "grunt": "^1.4.1",
     "grunt-contrib-clean": "^2.0.0",
@@ -44,6 +44,6 @@
     "grunt-contrib-watch": "^1.1.0",
     "grunt-exec": "^3.0.0",
     "mocha": "^9.0.0",
-    "typescript": "^4.3.2"
+    "typescript": "^5.1.6"
   }
 }

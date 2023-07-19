@@ -1,13 +1,3 @@
 {
-  "extends": "@infokin/tsconfig",
-  "compilerOptions": {
-    "lib": [
-      "ES2020",
-      "DOM"
-    ]
-  },
-  "include": [
-    "src/**/*.ts",
-    "test/**/*.ts"
-  ]
+  "extends": "@infokin/tsconfig"
 }
