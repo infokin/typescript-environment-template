@@ -1,96 +1,87 @@
 # TypeScript Environment Template
 
-Template environment for TypeScript development. It contains a few files to quickly get a new TypeScript project started
-and it has a basic [Grunt](https://gruntjs.com/) setup to build, watch (build continuously), clean and release the
+Template environment for TypeScript development. It contains a simple setup for quickly getting started with a new
+TypeScript project using [Grunt](https://gruntjs.com/) to build, watch (build continuously), clean and release the
 project.
 
 ## Install
 
-First, checkout the project with:
+First, make sure you have [Node](https://nodejs.org/) installed on your system. Then, checkout the project with:
 
-~~~bash
+```bash
 git clone https://github.com/clovergaze/typescript-environment-template
-~~~
+```
 
-The Node package manager (npm) is used for management, so [Node](https://nodejs.org/) must be installed on the system
-where you intend to use the project.
+Next, change into the projects root folder and install all necessary dependencies with:
 
-To install all necessary dependencies run
-
-~~~bash
+```bash
 npm install
-~~~
-
-inside the projects root folder.
+```
 
 ## Usage
 
-All source files are located under _'./src'_, with the TypeScript files located under _'./src/scripts'_. After the
-installation has finished, you can build the project and see what it does, or you can immediately start deleting and
-changing the initial files to your liking.
-
-## Development
-
-For almost any development step, like the continuous build mode, testing and releasing, everything has to be built
-first.
+After installing all dependencies, you can start using the project. See the following sections for more details.
 
 ### Building
 
-To build the project execute
+To build the project run:
 
-~~~bash
+```bash
 npm run build
-~~~
+```
 
-on the console.
-
-This runs Grunts _build_ task (via its _default_ task), that lints and transpiles the sources, including source files
-under _'./test'_. See the _scripts_ section in _package.json_ and the Grunt configuration in _Gruntfile.js_ for more
+This will run Grunt's `build` pipeline (via its `default` task), that lints and transpiles the sources, including files
+found under `./test`. See the `scripts` section in `package.json` and the Grunt configuration in `Gruntfile.js` for more
 details.
 
-#### Continuous build mode
+### Watch / Continuous Build Mode
 
-After building everything at least once, you can use the continuous build mode by executing
+You can also use a continuous build mode for development, if you have built the project at least once using the `build`
+task. This will continuously rebuild the sources, if anything changes.
 
-~~~bash
+To start the continuous build mode, run:
+
+```bash
 npm run watch
-~~~
+```
 
-at the console. This will continuously rebuild the sources, if anything changes. See the _watch_ task in _Gruntfile.js_
-to find out which files trigger the build task.
+Have a look at the `watch` task in `Gruntfile.js` for more detailed information.
 
 ### Testing
 
-~~~bash
-npm test
-~~~
+Run tests with:
 
-This executes test cases inside the _'./test'_ folder using [Mocha](http://mochajs.org/).
+```bash
+npm test
+```
+
+This executes test cases inside the `'./test'` folder using [Mocha](http://mochajs.org/).
 
 ### Releasing
 
 To build a release version of the project run:
 
-~~~bash
+```bash
 npm run release
-~~~
+```
 
-This will create a folder called _'./dist'_ with only the most necessary files to run the project.
+This will create a folder called `'./dist'` that will contain only the necessary files in to to run the project.
 
 ### Cleaning
 
-To remove all transpilation results, map files and leftover files, run:
+Tor remove all leftover files from the build process, run:
 
-~~~bash
+```bash
 npm run clean
-~~~
+```
 
-This will also remove the _'./dist'_ folder.
+Cleaning will also include the removal of the `'./dist'` folder.
 
 ## Bugs & Issues
 
-Something is not working as expected? Please report bugs or issues on
-the [corresponding GitHub page](https://github.com/clovergaze/typescript-environment-template/issues).
+If you encounter any issues or bugs, we would appreciate it if you could report them on
+the [corresponding GitHub page](https://github.com/clovergaze/typescript-environment-template/issues). Thank you for
+your help in improving this project.
 
 ## Author
 
